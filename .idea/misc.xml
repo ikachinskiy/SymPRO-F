@@ -15,6 +15,13 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="880012113">
+      <usages-collector id="statistics.php.composer.actions">
+        <counts>
+          <entry key="init_from_MainMenu" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="PhpTestFrameworkVersionCache">
     <tools_cache>
