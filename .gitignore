@@ -1,9 +1,18 @@
 
 ###> symfony/framework-bundle ###
-.env
+#.env
 /var/
 ###< symfony/framework-bundle ###
 
 ###> symfony/web-server-bundle ###
 .web-server-pid
 ###< symfony/web-server-bundle ###
+Будет удалено .idea/workspace.xml
+Будет удалено tests/
+Будет удалено vendor/bin/
+Будет удалено vendor/composer/
+Будет удалено vendor/doctrine/
+Будет удалено vendor/psr/
+Будет удалено vendor/sensio/
+Будет удалено vendor/symfony/
+Будет удалено vendor/twig/
