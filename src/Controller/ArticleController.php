@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name = "index")
      */
     public function homepage() {
 //        dump($_SERVER['APP_ENV']);

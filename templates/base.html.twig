@@ -7,13 +7,15 @@
 
     <title>{% block title %}{% endblock %}</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href={{ asset('css/bootstrap.min.css') }}>
     {% block stylesheets %}
     {% endblock %}
 
 </head>
 <body>
-{% block body %}{% endblock %}
+{% block body %}
+
+{% endblock %}
 
 <!-- Optional JavaScript -->
 {% block javascripts %}{% endblock %}

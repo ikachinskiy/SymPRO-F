@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAE;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;AAGZ,EAAG;EACD,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI",
+"mappings": "AAAA,cAAe;EACb,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,KAAK",
 "sources": ["../../assets/scss/skin.scss"],
 "names": [],
 "file": "skin.css"

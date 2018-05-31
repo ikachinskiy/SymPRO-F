@@ -5,9 +5,18 @@
 {% endblock %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="css/skin.css">
+    <link rel="stylesheet" href={{ asset('css/skin.css') }}>
 {% endblock %}
 
 {% block body %}
-<h1>Тест SymPRO-F</h1>
+<div class="container">
+    {% block navbar %}
+        <nav class="navbar">
+            <a class="navbar-brand" href="{{ path('index') }}">SymPRO-F</a>
+        </nav>
+    {% endblock %}
+    {% block work %}
+        <p class="lead">Начало</p>
+    {% endblock %}
+</div>
 {% endblock %}
