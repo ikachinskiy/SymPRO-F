@@ -9,21 +9,18 @@
 namespace App\Controller;
 
 
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArticleController
+class ArticleController extends Controller
 {
     /**
      * @Route("/")
      */
     public function homepage() {
-        dump($_SERVER['APP_ENV']);
-        return new Response(
-            "<html><body>".
-                     'APP_ENV = '.$_SERVER['APP_ENV'].
-                    "</body></html>"
-        );
+//        dump($_SERVER['APP_ENV']);
+        return $this->render("F/main.html.twig");
     }
 
     /**

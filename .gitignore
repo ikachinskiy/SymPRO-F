@@ -16,3 +16,8 @@
 Будет удалено vendor/sensio/
 Будет удалено vendor/symfony/
 Будет удалено vendor/twig/
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
