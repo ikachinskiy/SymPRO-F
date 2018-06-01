@@ -14,15 +14,48 @@
 </head>
 <body>
 {% block body %}
-
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sn-navbar">
+            <a class="navbar-brand" href={{ path('index') }}>SymPRO-F</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuTXT"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       href={{ path('txt_index') }}>TXT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuTXT">
+                        <a class="dropdown-item" href={{ path('txt_list') }}>Список TXT-файлов</a>
+                        <a class="dropdown-item" href={{ path('txt_new') }}>Новый TXT-файл</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuXML"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       href={{ path('xml_index') }}>XML</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuXML">
+                        <a class="dropdown-item" href={{ path('xml_list') }}>Список XML-файлов</a>
+                        <a class="dropdown-item" href={{ path('xml_new') }}>Новый XML-файл</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuINI"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                       href={{ path('ini_index') }}>INI</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuINI">
+                        <a class="dropdown-item" href={{ path('ini_list') }}>Список INI-файлов</a>
+                        <a class="dropdown-item" href={{ path('ini_new') }}>Новый INI-файл</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 {% endblock %}
 
 <!-- Optional JavaScript -->
 {% block javascripts %}{% endblock %}
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src={{ asset('js/jquery-3.3.1.min.js') }}></script>
+<script src={{ asset('js/popper.min.js') }}></script>
+<script src={{ asset('js/bootstrap.min.js') }}></script>
 </body>
 </html>

@@ -24,13 +24,65 @@ class ArticleController extends Controller
     }
 
     /**
-     * @Route("/news")
+     * @Route("/txt", name = "txt_index")
      */
-    public function show() {
-        return new Response(
-            "<html><body>".
-            'Show = '.$_SERVER['APP_ENV'].
-            "</body></html>"
-        );
+    public function view_txt_index() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/txt/new", name = "txt_new")
+     */
+    public function view_txt_new() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/txt/list", name = "txt_list")
+     */
+    public function view_txt_list() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/xml", name = "xml_index")
+     */
+    public function view_xml_index() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/xml/new", name = "xml_new")
+     */
+    public function view_xml_new() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/xml/list", name = "xml_list")
+     */
+    public function view_xml_list() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/ini", name = "ini_index")
+     */
+    public function view_ini_index() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/ini/new", name = "ini_new")
+     */
+    public function view_ini_new() {
+        return $this->render("F/main.html.twig");
+    }
+
+    /**
+     * @Route("/ini/list", name = "ini_list")
+     */
+    public function view_ini_list() {
+        return $this->render("F/main.html.twig");
     }
 }
