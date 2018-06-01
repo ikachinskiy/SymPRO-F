@@ -9,14 +9,42 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    {% block navbar %}
-        <nav class="navbar">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light sn-navbar">
             <a class="navbar-brand" href="{{ path('index') }}">SymPRO-F</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navDropMenuTXT" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TXT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navDropMenuTXT">
+                        <a class="dropdown-item" href="#">Список</a>
+                        <a class="dropdown-item" href="#">Новый</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navDropMenuXML" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        XML
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navDropMenuXML">
+                        <a class="dropdown-item" href="#">Список</a>
+                        <a class="dropdown-item" href="#">Новый</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navDropMenuINI" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        INI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navDropMenuINI">
+                        <a class="dropdown-item" href="#">Список</a>
+                        <a class="dropdown-item" href="#">Новый</a>
+                    </div>
+                </li>
+            </ul>
         </nav>
-    {% endblock %}
-    {% block work %}
         <p class="lead">Начало</p>
-    {% endblock %}
-</div>
+    </div>
 {% endblock %}

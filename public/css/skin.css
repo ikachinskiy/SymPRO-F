@@ -1,6 +1,9 @@
-a.navbar-brand {
-  color: #7ca5b5;
+nav.sn-navbar {
+  background-color: rgba(182, 182, 182, 0.52); }
+
+.sn-navbar a.navbar-brand {
   font-weight: bold;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  color: #577381; }
 
 /*# sourceMappingURL=skin.css.map */
