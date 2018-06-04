@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+Тест SymPro-F
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href={{ asset('css/skin.css') }}>
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <p class="lead">Новый файл типа INI</p>
+    </div>
+{% endblock %}
